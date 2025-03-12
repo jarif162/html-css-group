@@ -1,0 +1,36 @@
+img{
+    width: 100%;
+}
+
+h1{
+    color: #275688;
+    text-align: center;
+    font-size: 50px;
+}
+
+.h{
+    background-color: #f1f1f1;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+}
+
+.hh{
+    color: #307dca;
+    font-weight: bold;
+
+}
+
+.p1 span{
+    color: #eaa770;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.l1{
+    background-color:blue ;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: small;
+}

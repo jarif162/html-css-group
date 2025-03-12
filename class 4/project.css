@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    color: #0A8080;
+    max-width: 827px;
+   margin: 0 auto;
+}
+h2{    
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #0A8080;
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 78px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+p{   
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+color: #000000;
+
+}
+
+.hero{
+    color: #FEFFF5;
+    text-align: center;
+}
+
+.b{
+    color:white;
+    background-color:#0A8080;
+    text-decoration: none;
+    padding: 8px 40px;
+    display: inline-block;
+    box-shadow:  0px 4px 4px 0px #00000033;
+    border-radius: 10px;
+}
+
+.second{
+    background-color: #FFFFFF;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.btn{
+    color: white;
+    background-color: #0A8080;
+    box-shadow: 0px 4px 4px 0px #00000033;
+    border-radius: 10px;
+    padding: 8px 26px;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+
+.post{
+  background-color:  #FEFFF5;
+  box-shadow: 0px 4px 20px 0px #00000026;
+  border-radius: 10px;
+  padding: 43px 112px 160px 39px;
+  max-width: 942px;
+  max-height: 239px;
+  margin: 0 auto;
+}
+
+footer{
+    background-color:  #0A8080;
+    text-align: center;
+   color: white;
+   margin-top: 86px;
+   padding-top: 13px;
+   padding-bottom: 14px;
+
+}
+

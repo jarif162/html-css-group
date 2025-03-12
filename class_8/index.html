@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div className="container">
+        <div className="logo">
+          <h2>Work</h2>
+        </div>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">protfolio</a>
+        </nav>
+        <a href="#" className="primary-btn">Learn more</a>
+      </div>
+    </header>
+
+    <main>
+      <section className="hero">
+        <div className="hero-container container">
+          <div className="hero-content">
+            <h1>Responsive Layout</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              dicta, exercitationem animi, quidem at sit dolor, unde facilis ex
+              eligendi dolorum corrupti laborum porro aliquam expedita
+              recusandae asperiores? In ducimus laboriosam quo harum animi,
+              rerum sint esse itaque alias possimus!
+            </p>
+            <button>Learn more</button>
+          </div>
+
+          <div className="hero-image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGK3diR3Zi-mnOXEaj-3ewmFyRYVxGzVzZw&s"
+              alt="cat"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="Service" data-aos="zoom-out-left">
+        <div className="container">
+          <h2>Our serices</h2>
+          <div className="services">
+            <div className="service">
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                quas optio vel!
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officiis numquam ea quo aperiam sunt accusantium, blanditiis
+                veniam neque quas iusto maiores! Adipisci ducimus, placeat
+                blanditiis error atque nisi et eaque accusamus esse consequuntur
+                debitis, illo sequi! Nemo aut libero sed.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500, //1000=1sec
+        delay: 300,
+        offset: 200,
+      });
+    </script>
+  </body>
+</html>

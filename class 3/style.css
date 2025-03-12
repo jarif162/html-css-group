@@ -1,0 +1,26 @@
+.a,.b{
+    color: blue;
+    background-color: green;
+    font-size: 20px;
+    text-align: center;
+}
+
+.about-a{
+    font: 20px;
+    margin-left:auto;
+    padding: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+.about-b{
+    color: green;
+}
+
+#id{
+    color: green;
+}
+
+img{
+    width: 100%;
+}

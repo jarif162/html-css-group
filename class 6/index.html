@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psuedo</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(255, 55, 0);
+      /* transition-property: width;
+      transition-duration: 5s;
+      transition-timing-function: linear;
+      transition-delay: 1s; */
+      /* transition: all 7s ease-in 3s; */
+      transition: width 2s, background-color 1s;
+    }
+
+    /* .box:nth-child(2) {
+      background-color: aquamarine;
+    }
+
+    .box:nth-child(4) {
+      color: orange;
+      font-weight: bold;
+    } */
+
+    .box:nth-child(odd) {
+      background-color: brown;
+    }
+
+    .box:nth-child(even) {
+      background-color: blanchedalmond;
+      color: black;
+    }
+
+    /* .box:first-child {
+      background-color: blanchedalmond;
+      color: black;
+    } */
+
+    .box:hover {
+      color: rgb(208, 190, 190);
+      background-color: blue;
+      cursor: crosshair;
+      width: 50px;
+    }
+
+    .try {
+      background-color: aqua;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      background-color: black;
+      color: aliceblue;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: all 2s ease-in;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .btn:hover {
+      background-color: red;
+      opacity: 0.6;
+      cursor: alias;
+      /* transform: translateX(100px); */
+      /* transform: translate(40px, 50px); */
+      /* transform: rotate(360deg); */
+      /* transform: scale(2);   */ /* #default 1 as always */
+      /* transform: skew(50deg); */
+      transform: rotateZ(150deg);
+    }
+
+    .wrapper {
+      height: 50vh;
+      background-color: salmon;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wrapper h2 {
+      transform: translatey(400px);
+    }
+  </style>
+  <body>
+    <section className="try">
+      <a href="#" className="btn">Learn more</a>
+    </section>
+    <section>
+      <div className="box">
+        <h2>box1</h2>
+      </div>
+      <div className="box">
+        <h2>box1</h2>
+      </div>
+      <div className="box">
+        <h2>box1</h2>
+      </div>
+      <div className="box">
+        <h2>box1</h2>
+      </div>
+      <div className="box">
+        <h2>box1</h2>
+      </div>
+    </section>
+
+    <section>
+      <div className="wrapper">
+        <h2>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis,
+          soluta?
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat
+          saepe veritatis deleniti ab harum? Laborum reprehenderit commodi, nisi
+          expedita incidunt ad et deserunt praesentium aspernatur odio,
+          voluptatum nemo quod libero reiciendis, ipsum ipsam delectus qui
+          recusandae vitae harum dignissimos!
+        </p>
+        <a href="#">learn more</a>
+      </div>
+    </section>
+  </body>
+</html>

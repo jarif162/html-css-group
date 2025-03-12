@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      border: 2px solid red;
+      max-width: 800px;
+      background-color: aqua;
+      height: 500px;
+      margin: auto;
+
+      display: flex;
+      /* default row in flex */
+      flex-direction: row;
+      justify-content: space-between;
+      /* align-items: flex-start; */
+      gap: 20px;
+      /* flex-wrap: wrap; */
+      /* flex-flow:column wrap; */
+    }
+    .box {
+      /* max-width: 800px; */
+      max-height: 50px;
+      background: blue;
+      /* margin: 10px; */
+      padding: 10px;
+      box-sizing: border-box;
+      border: 2px solid black;
+      border-radius: 5px 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+      flex-basis: 50%;
+    }
+
+    .b1 {
+      background-color: red;
+      order: 1;
+      /* flex-grow: 1; */
+      align-self: center;
+    }
+
+    .b2 {
+      background-color: green;
+      order: 2;
+      flex-shrink: 0;
+    }
+
+    .b3 {
+      background-color: orange;
+      order: 3;
+    }
+
+    /* ul li{
+        list-style: none;
+    } */
+
+    /* .container>*{
+        flex-basis: 100%;
+     } */
+  </style>
+
+  <body>
+    <section className="container">
+      <div className="box b1">box-1</div>
+      <div className="box b2">box-2</div>
+      <div className="box b3">box-3</div>
+    </section>
+  </body>
+</html>

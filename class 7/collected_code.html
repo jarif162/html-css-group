@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* header section */
+
+    a {
+      text-decoration: none;
+      color: #ecf4f3;
+      font-family: "Mulish", serif;
+      display: inline-block;
+    }
+    p,
+    span {
+      font-family: "Mulish", serif;
+      font-size: 16px;
+    }
+    h1,
+    h2,
+    h3 {
+      font-family: "DM Sans", serif;
+    }
+    .text {
+      color: #747d8c;
+    }
+
+    nav {
+      display: flex;
+      max-width: 1240px;
+      height: 100px;
+      padding: 30px;
+      justify-content: space-around;
+      text-align: center;
+      margin: auto;
+    }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 0 15px;
+      font-size: 14px;
+      font-weight: 600;
+      padding-top: 5px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 500;
+    }
+    /* button section */
+
+    .call-btn {
+      font-size: 15px;
+      font-weight: 600;
+      background-color: #2a9d8f;
+      padding: 15px 30px;
+      position: relative;
+      z-index: 5;
+    }
+
+    /* hero section */
+
+    .hero {
+      background-image: url(img/hero-bg.jpg);
+      min-height: 700px;
+      max-width: 1800px;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      justify-content: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 1;
+    }
+    .hero div {
+      z-index: 2;
+      position: relative;
+    }
+
+    .upper-case {
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 56px;
+      font-weight: 500;
+      width: 800px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: 500;
+    }
+    .hero-content {
+      margin: 50px auto;
+    }
+    .hero-content p {
+      margin-top: 65px;
+    }
+    .hero-content h1,
+    .hero-content a {
+      margin-top: 25px;
+    }
+  </style>
+  <body>
+    <!-- Header section -->
+    <header>
+      <section className="hero">
+        <nav>
+          <div>
+            <a href="#" className="logo">Generic</a>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#" className="mid-nav">Home</a></li>
+              <li><a href="#" className="mid-nav">About</a></li>
+              <li><a href="#" className="mid-nav">Offerings</a></li>
+              <li><a href="#" className="mid-nav"> Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <a href="#" className="call-btn">CALL TO ACTION</a>
+          </div>
+        </nav>
+
+        <!-- Hero section -->
+        <div className="hero-content">
+          <p>Prefix describing what your business does will be here</p>
+          <h1>
+            We Will Write a Headline Highlighting Your Business Offerings Here
+          </h1>
+          <a href="#" className="call-btn">CALL TO ACTION</a>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>

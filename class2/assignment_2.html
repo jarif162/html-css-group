@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 2</title>
+  </head>
+  <body>
+    <h1>
+      Bangladesh Digital User registration
+      <img
+        src="https://t4.ftcdn.net/jpg/03/21/70/45/360_F_321704592_azoD811yWmGtGixdjW2koEM1i4ZSksyA.jpg"
+        alt="Bangladesh flag"
+        width="20px"
+      />
+    </h1>
+    <form>
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <label for="a">Full name:<span style="color: red">*</span></label>
+        <input type="text" id="a" placeholder="Jarif " required /> <br />
+        <br />
+        <label for="b">Email address:<span style="color: red">*</span></label>
+        <input type="email" id="b" placeholder="@gmail.com" required /> <br />
+        <br />
+        <label for="c">password:</label>
+        <input type="password" id="c" /><br />
+        <br />
+        <label for="d">Date of birth:</label>
+        <input type="date" id="d" /><br />
+        <br />
+        <label for="e">Phone number:</label>
+        <input type="number" id="e" placeholder="016xxxxxxxx" /><br />
+        <br />
+        <label for="f"
+          >National id Number:<span style="color: red">*</span></label
+        >
+        <input type="number" id="f" required /><br />
+        <br />
+        <label for="g">Upload a profile picture:</label>
+        <input type="file" id="g" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preference and additional info</legend>
+        <label for="favorite-color">Select Your Favorite Color:</label>
+        <input type="color" id="favorite-color" value="#0000FF" /><br />
+        <br />
+        <label for="website">Website:</label>
+        <input type="url" id="website" placeholder="www.jarif.com" /><br />
+        <br />
+        <label for="appointment">Select Appointment Date and Time:</label>
+        <input type="datetime-local" id="appointment" /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Interest(multiple choice)</legend>
+        <input type="checkbox" id="ch" />
+        <label for="ch">Sports</label><br />
+        <input type="checkbox" id="chk" />
+        <label for="chk">Content creation</label><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Prefered communication method</legend>
+        <input type="radio" id="p" name="ra" /><label for="p">Email</label>
+        <input type="radio" id="l" name="ra" /><label for="l">Phone</label>
+        <input type="radio" id="m" name="ra" /><label for="m">SMS</label>
+      </fieldset>
+    </form>
+  </body>
+</html>

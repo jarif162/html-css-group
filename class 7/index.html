@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      background-color: saddlebrown;
+      color: rgb(128, 154, 9);
+      padding: 40px;
+      text-align: center;
+      margin: 10px;
+      border: 2x solid gray;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+      /* background-image: url(https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg); */
+      background-image: url(img/bki.jpg);
+      background-position: center;
+      background-size: contain;
+      /* background-repeat: no-repeat; */
+      position: relative;
+    }
+
+    .hero::before {
+      content: "Hello";
+      height: 100%;
+      width: 100%;
+      /* background-color: rgba(18, 18, 18, 0.699); */
+      background: linear-gradient(12deg, red, black);
+      position: absolute;
+      z-index: 1;
+    }
+
+    .hero-content p {
+      padding: 30px 0;
+      color: azure;
+    }
+
+    .hero-content {
+      z-index: 2;
+    }
+
+    .button {
+      border: none;
+      background-color: blanchedalmond;
+      padding: 20px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .h2 {
+      font-size: 30px;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* .h2::after {
+      content: "goog";
+    } */
+
+    .h2::before {
+      content: " ";
+      width: 100%;
+      height: 10px;
+      background-color: blue;
+      display: block;
+      position: absolute;
+      bottom: 10px;
+      z-index: -1;
+    }
+
+    .h2::after {
+      content: " ";
+      width: 30%;
+      height: 50px;
+      background-color: rgb(255, 119, 0);
+      display: block;
+      position: absolute;
+      background-image: url(https://img.freepik.com/premium-photo/grainy-gradient-background-red-white-blue-colors-with-soft-faded-watercolor-border-texture_927344-24167.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      right: 0;
+    }
+  </style>
+  <body>
+    <section className="hero">
+      <div className="hero-content">
+        <h2 className="h2">Lorem ipsum dolor sit amet.</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          delectus quia dignissimos reprehenderit illum. Id sunt dolores ullam
+          architecto neque, numquam sapiente nemo explicabo culpa. Laudantium
+          atque voluptate recusandae dolorem.
+        </p>
+        <a href="#" className="button">learn more</a>
+      </div>
+    </section>
+  </body>
+</html>

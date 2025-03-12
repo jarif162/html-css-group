@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section className="app">
+      <div className="container all">
+        <div className="a-img">
+          <img
+            src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg"
+            alt="img"
+            className="img"
+          />
+        </div>
+
+        <div className="a-form">
+          <h2>Book a Consultation</h2>
+          <form action="#">
+            <input type="text" placeholder="your name" name="Your_name" />
+            <input type="email" placeholder="gmail.com" name="Your_mail" />
+            <textarea
+              name="your_msg"
+              id=""
+              cols="38"
+              rows="10"
+              placeholder="helloo"
+            ></textarea>
+            <br />
+            <div className="genderg">
+              <label for="gender" className="gender-label">Choose Gender</label>
+              <div className="gender">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" value="male" />
+                <label for="gender">feMale</label>
+                <input type="radio" name="gender" value="female" />
+              </div>
+              <input type="submit" value="Book my call" className="bk" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

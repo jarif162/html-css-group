@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box</title>
+  </head>
+
+  <style>
+    .box {
+      background-color: blue;
+      height: 200px;
+      width: 550px;
+      border: 10px white solid;
+      /* outline: 20px black solid; */
+      margin: auto;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      box-sizing: content-box;
+    }
+
+    section {
+      background-color: red;
+      height: 400px;
+      width: auto;
+      border-radius: 10px;
+      border-width: 20px;
+      outline: 20px solid green;
+      padding: 20px;
+    }
+  </style>
+
+  <body>
+    <section>
+      <div className="box">
+        <h2>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis,
+          error!
+        </h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+          commodi sint temporibus cumque nam dolor, nulla quae unde explicabo,
+          id illum. Quis non maiores tempora enim adipisci. Distinctio,
+          officiis! Hic Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Quibusdam, quidem..
+        </p>
+
+        <a href="#">Read more</a>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>logo</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      height: 40px;
+      width: 60px;
+    }
+
+    .c {
+      max-width: 800px;
+      margin: auto;
+      border: 4px black solid;
+      position: relative;
+    }
+
+    .c::before {
+      content: "";
+      height: 100%;
+      width: 40%;
+      background: linear-gradient(90deg, transparent, white);
+      position: absolute;
+    }
+    .logo {
+      animation: scroll 10s linear infinite alternate-reverse;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(55%);
+      }
+
+      to {
+        transform: translateX(0%);
+      }
+    }
+
+    .sticky {
+      display: flex;
+      height: 100vh;
+      position: relative;
+    }
+
+    .box {
+      background-color: yellow;
+      height: 150px;
+      position: sticky;
+      top: 0;
+    }
+
+    .sticky > * {
+      flex-basis: 100%;
+      padding: 40px;
+      margin: 30px;
+    }
+
+    .left {
+      background-color: red;
+    }
+
+    details[open] {
+      background-color: brown;
+    }
+
+    .arrow {
+      width: 20px;
+    }
+  </style>
+  <body>
+    <i className="bx bxl-upwork"></i>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      className="arrow"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+      />
+    </svg>
+
+    <marquee behavior="" direction="" loop="-1" scrollamount="20">
+      <img
+        src="https://logomak.com/blog/wp-content/uploads/2023/09/Apple-Logo-500x281-min.png"
+        alt="apple"
+      />
+      <img
+        src="https://logomak.com/blog/wp-content/uploads/2023/09/Apple-Logo-500x281-min.png"
+        alt="apple"
+      />
+      <img
+        src="https://logomak.com/blog/wp-content/uploads/2023/09/Apple-Logo-500x281-min.png"
+        alt="apple"
+      />
+      <img
+        src="https://logomak.com/blog/wp-content/uploads/2023/09/Apple-Logo-500x281-min.png"
+        alt="apple"
+      />
+      <img
+        src="https://logomak.com/blog/wp-content/uploads/2023/09/Apple-Logo-500x281-min.png"
+        alt="apple"
+      />
+    </marquee>
+
+    <div className="c">
+      <div className="logo">
+        <img
+          src="https://logomak.com/blog/wp-content/uploads/2023/09/Apple-Logo-500x281-min.png"
+          alt="apple"
+        />
+        <img
+          src="https://logomak.com/blog/wp-content/uploads/2023/09/Apple-Logo-500x281-min.png"
+          alt="apple"
+        />
+        <img
+          src="https://logomak.com/blog/wp-content/uploads/2023/09/Apple-Logo-500x281-min.png"
+          alt="apple"
+        />
+        <img
+          src="https://logomak.com/blog/wp-content/uploads/2023/09/Apple-Logo-500x281-min.png"
+          alt="apple"
+        />
+        <img
+          src="https://logomak.com/blog/wp-content/uploads/2023/09/Apple-Logo-500x281-min.png"
+          alt="apple"
+        />
+      </div>
+    </div>
+
+    <div className="sticky">
+      <div className="box">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt
+          obcaecati impedit magni earum. Nam eveniet autem, aliquam officiis
+          beatae magnam, atque tempore rem ullam harum eius quis voluptatum
+          ipsa?
+        </p>
+        <button>ok</button>
+      </div>
+      <div className="left">
+        <div>
+          <h2>good</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            placeat! Distinctio quas quasi voluptatem excepturi modi doloremque
+            iste incidunt temporibus, necessitatibus sequi molestias veritatis
+            suscipit sunt quis expedita dignissimos ipsa eius hic eum?
+            Dignissimos quis quod nemo tenetur ea quos sequi modi voluptates
+            numquam. Accusantium et quis ipsa beatae tenetur.
+          </p>
+        </div>
+        <div>
+          <h2>good</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            placeat! Distinctio quas quasi voluptatem excepturi modi doloremque
+            iste incidunt temporibus, necessitatibus sequi molestias veritatis
+            suscipit sunt quis expedita dignissimos ipsa eius hic eum?
+            Dignissimos quis quod nemo tenetur ea quos sequi modi voluptates
+            numquam. Accusantium et quis ipsa beatae tenetur.
+          </p>
+        </div>
+        <div>
+          <h2>good</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            placeat! Distinctio quas quasi voluptatem excepturi modi doloremque
+            iste incidunt temporibus, necessitatibus sequi molestias veritatis
+            suscipit sunt quis expedita dignissimos ipsa eius hic eum?
+            Dignissimos quis quod nemo tenetur ea quos sequi modi voluptates
+            numquam. Accusantium et quis ipsa beatae tenetur.
+          </p>
+        </div>
+        <div>
+          <h2>good</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            placeat! Distinctio quas quasi voluptatem excepturi modi doloremque
+            iste incidunt temporibus, necessitatibus sequi molestias veritatis
+            suscipit sunt quis expedita dignissimos ipsa eius hic eum?
+            Dignissimos quis quod nemo tenetur ea quos sequi modi voluptates
+            numquam. Accusantium et quis ipsa beatae tenetur.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <details>
+      <summary>Epcot Center</summary>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="100"
+        height="100"
+        id="html"
+      >
+        <path
+          d="m1322 597 16-175H454l47 534h612l-22 228-197 53-196-53-13-140H510l22 278 362 100h4v-1l359-99 50-544H663l-15-181h674zM192 128h1408l-128 1438-578 162-574-162z"
+        ></path>
+      </svg>
+    </details>
+  </body>
+</html>

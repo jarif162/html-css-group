@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Custom Dropdown with Flag Images</title>
+        <style>
+          /* Styling the select to look like a dropdown */
+          .custom-select {
+            appearance: none;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            border-radius: 8px;
+            color: #2d2d2d;
+            font-size: 16px;
+            position: relative;
+          }
+
+          /* Hide the default dropdown icon */
+          .custom-select::-ms-expand {
+            display: none;
+          }
+
+          .custom-select img {
+            width: 20px;
+            height: 14px;
+            margin-right: 8px;
+            vertical-align: middle;
+          }
+        </style>
+      </head>
+      <body>
+        <label for="language-select">Choose a language:</label>
+        <select id="language-select" className="custom-select">
+          <option value="es">
+            <img
+              src="https://flagcdn.com/16x12/my.png"
+              srcset="
+                https://flagcdn.com/32x24/my.png 2x,
+                https://flagcdn.com/48x36/my.png 3x
+              "
+              width="16"
+              height="12"
+              alt="Malaysia"
+            />
+            Spanish
+          </option>
+          <option value="en">
+            <img src="https://flagcdn.com/20x14/us.png" alt="USA Flag" />
+            English
+          </option>
+          <option value="fr">
+            <img src="https://flagcdn.com/20x14/fr.png" alt="France Flag" />
+            French
+          </option>
+          <option value="de">
+            <img src="https://flagcdn.com/20x14/de.png" alt="Germany Flag" />
+            German
+          </option>
+        </select>
+      </body>
+    </html>
+  </body>
+</html>

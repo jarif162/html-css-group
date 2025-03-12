@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: rgb(0, 0, 0);
+      height: 100vh;
+      display: grid;
+      place-content: center;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: rgb(154, 154, 154);
+      display: grid;
+      place-content: center;
+      /* align-content: center;
+      text-align: center; */
+
+      animation-name: bg-c;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    .slide-rotate-hor-top {
+      -webkit-animation: slide-rotate-hor-top 0.5s
+        cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slide-rotate-hor-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        both;
+
+      width: 200px;
+      height: 200px;
+      background-color: rgb(154, 154, 154);
+    }
+
+    @-webkit-keyframes slide-rotate-hor-top {
+      0% {
+        -webkit-transform: translateY(0) rotateX(0deg);
+        transform: translateY(0) rotateX(0deg);
+      }
+      100% {
+        -webkit-transform: translateY(-150px) rotateX(-90deg);
+        transform: translateY(-150px) rotateX(-90deg);
+      }
+    }
+    @keyframes slide-rotate-hor-top {
+      0% {
+        -webkit-transform: translateY(0) rotateX(0deg);
+        transform: translateY(0) rotateX(0deg);
+      }
+      100% {
+        -webkit-transform: translateY(-150px) rotateX(-90deg);
+        transform: translateY(-150px) rotateX(-90deg);
+      }
+    }
+
+    @keyframes bg-c {
+      from {
+        background-color: aqua;
+        transform: translateX(50px);
+      }
+
+      to {
+        background-color: blue;
+        transform: translateX(-50px);
+      }
+    }
+
+    @keyframes movein {
+      0% {
+      }
+
+      10% {
+      }
+    }
+  </style>
+  <body>
+    <div className="container">
+      <div className="box slide-rotate-hor-top">Css animation</div>
+    </div>
+  </body>
+</html>

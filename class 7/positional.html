@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    S
+  </head>
+  <style>
+    /* .heading::first-letter {
+      font-size: 50px;
+      font-weight: 40px;
+    }
+
+    .box p::first-line {
+      color: aqua;
+      font-weight: 50px;
+    }
+
+    ::selection {
+      color: blue;
+    }
+
+    ::marker {
+      color: brown;
+    } */
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      /* display: flex; */
+      /* justify-content: center; */
+      /* height: 100vh; */
+      height: 500px;
+      margin-top: 40px;
+      align-items: center;
+      background-color: rgb(27, 90, 90);
+      position: relative;
+    }
+
+    .box {
+      width: 200px;
+      border: 2px solid purple;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: saddlebrown;
+      /* position: absolute; */
+      /* bottom: 20px; */
+      /* top: 30px; */
+      opacity: 0.6;
+    }
+
+    .box2 {
+      border: 3px solid black;
+      width: 200px;
+      position: absolute;
+      top: 50px;
+      padding: 20px;
+      background-color: aqua;
+    }
+
+    .box2:nth-child(2) {
+      top: 30px;
+      background-color: blue;
+      z-index: 1;
+    }
+    .box2:nth-child(4) {
+      top: -50px;
+      background-color: salmon;
+    }
+
+    .c {
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      position: fixed;
+      top: 10px;
+      right: 30px;
+    }
+  </style>
+  <body>
+    <div className="container">
+      <div className="box">
+        <h2 className="heading">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+          quisquam.
+
+          <ol>
+            <li>ku</li>
+          </ol>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odit
+          dignissimos provident ipsa, architecto neque asperiores, possimus
+          iusto. Dignissimos, saepe ipsa?
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+      <div className="box2">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          nulla sit fuga distinctio voluptatem odio blanditiis facilis? Ullam
+        </p>
+      </div>
+      <div className="box-3">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+          className="c"
+        />
+      </div>
+      <div className="box2">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem nulla sit fuga distinctio voluptatem odio blanditiis facilis?
+          Ullam
+        </p>
+      </div>
+      <div className="box2">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+        </p>
+      </div>
+      <div className="box2">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          nulla sit fuga distinctio voluptatem odio blanditiis facilis? Ullam
+        </p>
+      </div>
+    </div>
+    <div className="container"></div>
+  </body>
+</html>
